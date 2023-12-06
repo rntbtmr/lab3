@@ -3,11 +3,14 @@ package lab3;
 public class Vector {
     private Point point1;
     private Point point2;
+    private static int amountVectors; // Статическое поле
+
 
     public Vector(Point point1, Point point2)
     {
         this.point1 = point1;
         this.point2 = point2;
+        amountVectors++;
     }
 
     public void setPoint1(Point point)
@@ -30,6 +33,7 @@ public class Vector {
         return this.point2;
     }
 
+//    Массив объектов
     public int[] findCoordinates()
     {
         int[] coordinates = {point2.getX() - point1.getX(), point2.getY() - point1.getY(), point2.getZ() - point1.getZ()};

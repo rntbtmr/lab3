@@ -11,6 +11,11 @@ public class Point {
         this.name = name;
     }
 
+    // статический метод
+    static void printTemplatePoint()
+    {
+        System.out.println("Название точки:X,Y,Z");
+    }
     public void printPoint() {
         System.out.println(name + ":" + x + "," + y + "," + z);
     }
