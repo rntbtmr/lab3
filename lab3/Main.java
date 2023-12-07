@@ -8,7 +8,7 @@ public class Main {
         System.out.println();
 
         System.out.println("Вектор");
-        Point point2 = new Point(1,1,1, "B");
+        Point point2 = new Point(2,2,2, "B");
         Vector vector = new Vector(point1, point2);
         vector.printVector();
         System.out.println();
