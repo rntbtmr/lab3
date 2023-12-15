@@ -4,6 +4,7 @@ public class Main {
     public static void main(String[] args) {
         System.out.println("Точка");
         Point point1 = new Point(2,2,2, "A");
+        point1.printMessage();
         point1.printPoint();
         System.out.println();
 
@@ -23,11 +24,11 @@ public class Main {
         Point point4 = new Point(4,4,4, "D");
         ColoredVector coloredVector2 = new ColoredVector(point3, point4, "Синий");
         Triangle triangle = new Triangle(coloredVector1, coloredVector2);
-        triangle.printTriangle();
+        triangle.printFigure();
         System.out.println();
 
         System.out.println("Параллелограм");
         Parallelogram parallelogram = new Parallelogram(coloredVector1,coloredVector2);
-        parallelogram.printParallelogram();
+        parallelogram.printFigure();
     }
 }

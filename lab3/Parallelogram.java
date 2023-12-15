@@ -1,6 +1,6 @@
 package lab3;
 
-public class Parallelogram {
+public class Parallelogram extends Figure{
     private final ColoredVector coloredVector1;
     private final ColoredVector coloredVector2;
 
@@ -21,8 +21,10 @@ public class Parallelogram {
         sinus = (float) Math.sqrt((1 - Math.pow(cosinus, 2)));
         return lenghtVector1 * lenghtVector2 * sinus;
     }
-    public void printParallelogram() {
-        this.coloredVector1.printColoredVector();
-        this.coloredVector2.printColoredVector();
+
+    @Override
+    public void printFigure() {
+        coloredVector1.printColoredVector();
+        coloredVector2.printColoredVector();
     }
 }

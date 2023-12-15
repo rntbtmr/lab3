@@ -1,6 +1,6 @@
 package lab3;
 
-public class Triangle {
+public class Triangle extends Figure{
     private final ColoredVector coloredVector1;
     private final ColoredVector coloredVector2;
 
@@ -12,8 +12,9 @@ public class Triangle {
         return (int) (coloredVector1.lengthVector() + coloredVector2.lengthVector() + coloredVector1.additionVectors(coloredVector2));
     }
 
-    public void printTriangle() {
-        this.coloredVector1.printColoredVector();
-        this.coloredVector2.printColoredVector();
+    @Override
+    public void printFigure() {
+        coloredVector1.printColoredVector();
+        coloredVector2.printColoredVector();
     }
 }

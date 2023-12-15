@@ -1,5 +1,6 @@
 package lab3;
 
+// Наследование
 public class ColoredVector extends Vector {
     String color;
 

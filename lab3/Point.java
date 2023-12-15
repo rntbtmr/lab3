@@ -1,6 +1,6 @@
 package lab3;
 
-public class Point {
+public class Point implements Message {
     private int x,y,z;
     String name;
 
@@ -18,6 +18,10 @@ public class Point {
     }
     public void printPoint() {
         System.out.println(name + ":" + x + "," + y + "," + z);
+    }
+
+    public void printMessage(){
+        System.out.println("Точка успешно задана");
     }
 
     public void setName(String name)
